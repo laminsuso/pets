@@ -1,4 +1,5 @@
-class pet{
+const Dog = require('./dog')
+class Pet{
     static pets =[]
     constructor(name, species, color){
         this.name = name
@@ -11,5 +12,6 @@ class pet{
     }
 }
 
-let p1 = new pet("sky", "dog", "black")
+let p1 = new Pet("sky", "dog", "black")
 console.log(p1)
+module.exports = Pet
